@@ -1,0 +1,70 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI Polymorphism Test App
+  version: "1.0"
+servers:
+- description: Generated server url
+  url: http://localhost:8080
+paths:
+  /animals/:
+    get:
+      operationId: getAnimalsByType
+      parameters:
+      - explode: true
+        in: query
+        name: animalType
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  oneOf:
+                  - $ref: '#/components/schemas/Cat'
+                  - $ref: '#/components/schemas/Fish'
+                  - $ref: '#/components/schemas/Frog'
+                type: array
+          description: OK
+      tags:
+      - animal-controller
+      x-accepts: '*/*'
+components:
+  schemas:
+    Animal:
+      discriminator:
+        propertyName: clazz
+      properties:
+        name:
+          type: string
+        type:
+          format: int32
+          type: integer
+        clazz:
+          type: string
+      required:
+      - clazz
+      type: object
+    Cat:
+      allOf:
+      - $ref: '#/components/schemas/Animal'
+      - $ref: '#/components/schemas/Cat_allOf'
+      type: object
+    Fish:
+      allOf:
+      - $ref: '#/components/schemas/Animal'
+      type: object
+    Frog:
+      allOf:
+      - $ref: '#/components/schemas/Animal'
+      type: object
+    Cat_allOf:
+      properties:
+        pawCount:
+          format: int32
+          type: integer
+      type: object
+
