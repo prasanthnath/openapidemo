@@ -1,13 +1,14 @@
 
 
-# Cat
+# ContractEmployee
 
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**pawCount** | **Integer** |  |  [optional]
+**vendorId** | **String** |  |  [optional]
+**vendorName** | **String** |  |  [optional]
 
 
 

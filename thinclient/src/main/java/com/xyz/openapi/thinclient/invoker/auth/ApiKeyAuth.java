@@ -3,7 +3,7 @@ package com.xyz.openapi.thinclient.invoker.auth;
 import org.springframework.http.HttpHeaders;
 import org.springframework.util.MultiValueMap;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-24T19:20:33.823042600+05:30[Asia/Calcutta]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-31T19:29:52.553759+05:30[Asia/Calcutta]")
 public class ApiKeyAuth implements Authentication {
     private final String location;
     private final String paramName;

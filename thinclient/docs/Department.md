@@ -1,13 +1,14 @@
 
 
-# CatAllOf
+# Department
 
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**pawCount** | **Integer** |  |  [optional]
+**id** | **String** |  |  [optional]
+**name** | **String** |  |  [optional]
 
 
 

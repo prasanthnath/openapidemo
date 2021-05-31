@@ -57,7 +57,7 @@ import java.util.TimeZone;
 
 import com.xyz.openapi.thinclient.invoker.auth.Authentication;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-24T19:20:33.823042600+05:30[Asia/Calcutta]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-31T19:29:52.553759+05:30[Asia/Calcutta]")
 @Component("com.xyz.openapi.thinclient.invoker.ApiClient")
 public class ApiClient extends JavaTimeFormatter {
     public enum CollectionFormat {

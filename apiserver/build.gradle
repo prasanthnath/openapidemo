@@ -44,8 +44,4 @@ openApiGenerate {
     generatorName.set("java");
     library.set("resttemplate")
     configOptions.put("serializationLibrary", "jackson")
-
-    /*configOptions = [
-        dateLibrary: "java8"
-    ]*/
 }
