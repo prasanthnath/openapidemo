@@ -4,7 +4,6 @@ import com.xyz.openapi.server.model.Department;
 import com.xyz.openapi.server.model.Employee;
 import com.xyz.openapi.server.model.EmployeeList;
 import com.xyz.openapi.server.model.ErrorResponse;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
